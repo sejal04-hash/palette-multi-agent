@@ -1,0 +1,13 @@
+task: what is linkedin
+agents:
+  layer_1_agent_1:
+    provider: ollama
+    model: qwen2:1.5b
+    temperature: 0.7
+    role: AI Agent
+    instructions: give me the correct ans
+    final: true
+layers:
+- name: layer_1
+  agents:
+  - layer_1_agent_1
